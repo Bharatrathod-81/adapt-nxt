@@ -1,0 +1,27 @@
+.sidebar_body{
+    width: 15rem;
+    height: 92vh;
+}
+
+.sidebar_element{
+    height: 5.5vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-icons{
+    margin: 0 1.5rem;
+}
+
+.active_elements{
+    background-color: rgba(6, 158, 252, 0.133);
+    border-right: 4px solid rgb(6, 158, 252);
+    color: rgb(6, 158, 252);
+}
+
+.sidebar_element:hover{
+    background-color: rgba(6, 158, 252, 0.133);
+    border-right: 4px solid rgb(6, 158, 252);
+    color: rgb(6, 158, 252);
+}

@@ -1,0 +1,33 @@
+.header_body{
+    height: 8vh;
+    box-shadow: 5px 1px 8px #888888;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_header_content{
+    width: 13rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo_img{
+    width: 6rem;
+}
+
+.right_header_content{
+    width: 14rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.avator_img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 2px solid gray;
+}

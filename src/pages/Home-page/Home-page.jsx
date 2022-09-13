@@ -102,7 +102,7 @@ export const HomePage = ({ prop }) => {
                 {orderStatus.map(e =>
                     <p
                         onClick={() => setStatus(e)}
-                        className={e===Status ? 'order_status order_status_active':'order_status'}
+                        className={e === Status ? 'order_status order_status_active' : 'order_status'}
                         key={e}>{e}
                     </p>)}
             </div>
@@ -165,21 +165,23 @@ export const HomePage = ({ prop }) => {
                         </div>
                     </div>
                     <div className='bottom_content2_category_container'>
-                                                                      
+
                         {dataArr.map(e => {
                             if (e.status === Status) {
                                 return (
                                     <div className='category_elements'>
                                         <div className='plus'>+</div>
-                                        <input type="checkbox" className='check_input_value' />
-                                        <div className='channel_value'><i class="fa fa-money"></i></div>
-                                        <div className='order_no_value'>{e.orderNo}</div>
-                                        <div className='order_date_value'>{e.orderDate}</div>
-                                        <div className='city_value'>{e.city}</div>
-                                        <div className='customer_name_value'>{e.customerName}</div>
-                                        <div className='order_value_value'>{e.orderValue}.00</div>
-                                        <div className={`${e.status} status_value`}>{e.status}</div>
-                                        <div className='operation_value'>Actions <i class="fa fa-angle-down"></i></div>
+                                        <div className='all_category_data'>
+                                            <input type="checkbox" className='check_input ' />
+                                            <div className='channel'><i class="fa fa-money"></i></div>
+                                            <div className='order_no order_color'>{e.orderNo}</div>
+                                            <div className='order_date'>{e.orderDate}</div>
+                                            <div className='city'>{e.city}</div>
+                                            <div className='customer_name'>{e.customerName}</div>
+                                            <div className='order_value'>{e.orderValue}.00</div>
+                                            <div className={`${e.status} status`}>{e.status}</div>
+                                            <div className='operation'>Actions <i class="fa fa-angle-down"></i></div>
+                                        </div>
                                     </div>
                                 )
                             }
@@ -193,6 +195,7 @@ export const HomePage = ({ prop }) => {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 };

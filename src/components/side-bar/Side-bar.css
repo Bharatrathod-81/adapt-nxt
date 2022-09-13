@@ -1,9 +1,10 @@
 .sidebar_body{
-    width: 15rem;
-    height: 92vh;
+    width: 14rem;
+    height: 85vh;
 }
 
 .sidebar_element{
+    width: 14rem;
     height: 5.5vh;
     display: flex;
     align-items: center;

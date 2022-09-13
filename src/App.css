@@ -8,6 +8,14 @@
   display: flex;
 }
 
-.b{
-  border: 2px solid;
+@media screen and (max-width: 1396px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  body {
+    font-size: 11px;
+  }
 }
